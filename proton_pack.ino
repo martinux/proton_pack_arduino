@@ -52,10 +52,10 @@ volatile byte pressed[NUMBUTTONS], justpressed[NUMBUTTONS], justreleased[NUMBUTT
 int latchPin = 8;
 //Pin connected to SH_CP of 74HC595 (pin 11)
 int clockPinPWR = 6;  // Power cell
-int clockPinGUN = 18;  // Gun
+int clockPinGUN = 18;  // Gun  (18 is analog pin 4 on arduino)
 ////Pin connected to DS of 74HC595 (pin 14)
 int dataPinPWR = 7;  // Power cell
-int dataPinGUN = 19; // Gun
+int dataPinGUN = 19; // Gun (19 is analog pin 5 on arduino)
 
 // PINS SUMMARY:
 // 2, 3, 4, 5, 10 = audioshield
