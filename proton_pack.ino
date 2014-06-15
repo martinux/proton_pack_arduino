@@ -317,7 +317,6 @@ void loop() {
     else if (justreleased[0]) {
         justreleased[0] = 0;
         playfile("pwroff.wav");
-        // ******************************** powerdown();
         for (int j = 14; j > -1; j--) {
             if (currentMillis - previousMillis_off > off_interval) {
                 previousMillis_off = currentMillis;
@@ -333,7 +332,6 @@ void loop() {
                 // return the latch pin high to signal chip that it 
                 // no longer needs to listen for information
                 digitalWrite(latchPin, 1);
-                // ***** delay(30);
             }
         }
         digitalWrite(latchPin, 0);
@@ -372,7 +370,6 @@ void loop() {
     	        //return the latch pin high to signal chip that it 
     	        //no longer needs to listen for information
                 digitalWrite(latchPin, 1);
-    	        // ***** delay(60);
             }
         }  	
     }
@@ -403,7 +400,6 @@ void loop() {
         		    //return the latch pin high to signal chip that it 
         		    //no longer needs to listen for information
         		    digitalWrite(latchPin, 1);
-        		    // ***** delay(40);
                         }
                     }
                 }
