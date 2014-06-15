@@ -495,11 +495,6 @@ void playfile(char *name) {
 }
 
 
-// Power-down light sequence.
-void powerdown() {
-}
-
-
 // the heart of the program
 void shiftOut(int myDataPin, int myClockPin, byte myDataOut) {
     // This shifts 8 bits out MSB first, 
