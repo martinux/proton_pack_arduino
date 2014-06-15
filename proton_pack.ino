@@ -1,3 +1,19 @@
+/*
+This code drives two sets of dual 595 shift registers. One set controls the 'power cell' LEDs of
+the proton pack, the other runs the 'bargraph' and two firing LEDs. Cyclotron lights are controlled
+by a 4017 decade counter and 555 timer.
+
+This code is based on code by Jeremey Choi, amendments have been made to improve clarity.
+Thanks to Jeremy who did almost all the work and freely shared the code.
+
+N.B. I'm not going for screen accuracy, simply something that looks pretty close. If you want to use
+the code in your own project the only thing I ask is that you share any modifications.
+
+Additions: On setup the powercell is reset (previously it may have had random lights on)
+On poweroff there is a 'rewind' on the powercell lights and an alternative poweroff sound.
+If you don't like it comment it out. :)
+*/
+
 
 // Required by SD card
 #include <FatReader.h>
